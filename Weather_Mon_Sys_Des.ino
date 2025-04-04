@@ -180,15 +180,3 @@ void writeFile(const char *filename, String data) {
         Serial.println("Error opening file");
     }
 }
-
-/*
-void writeFile(const char *filename, String data) {
-    myFile = SD.open(filename, FILE_WRITE);
-    if (myFile) {
-        myFile.println(data);
-        myFile.close();
-        Serial.println("Data written to " + String(filename));
-    } else {
-        Serial.println("Error opening file");
-    }
-}*/
